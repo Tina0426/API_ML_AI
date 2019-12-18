@@ -51,7 +51,10 @@
 ## 产品规划
 
 ### 产品流程图
-![我是铲屎官_产品流程图](https://gitee.com/NFUNM017/API_ML_AI/blob/master/%E6%88%91%E6%98%AF%E9%93%B2%E5%B1%8E%E5%AE%98_%E4%BA%A7%E5%93%81%E6%B5%81%E7%A8%8B%E5%9B%BE%20.png)
+![我是铲屎官_产品流程图](https://github.com/Tina0426/API_ML_AI/blob/master/image/%E6%88%91%E6%98%AF%E9%93%B2%E5%B1%8E%E5%AE%98_%E4%BA%A7%E5%93%81%E6%B5%81%E7%A8%8B%E5%9B%BE%20.png)
+
+### 产品功能架构图
+![我是铲屎官_功能架构图](https://github.com/Tina0426/API_ML_AI/blob/master/image/%E6%88%91%E6%98%AF%E9%93%B2%E5%B1%8E%E5%AE%98_%E5%8A%9F%E8%83%BD%E6%9E%B6%E6%9E%84%E5%9B%BE.png)
 
 
 ### API的运用
