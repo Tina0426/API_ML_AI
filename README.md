@@ -29,6 +29,7 @@
 
 ### 需求列表与人工智能API价值
 |用户案例|对应API|重要程度|
+|:---|:---:|---:|
 |用户想找到与自己宠物相类似的病症图片与照顾经验贴子|相似图片识别|非常重要|
 |用户的宠物走失了，用户想在网站看看有没有人看到自己宠物并上传至社交圈，以方便缩小寻找难度|相似图片识别|非常重要|
 |用户偶然间看到了稀奇的动物但是无法确定物种是保护动物，如果确定为保护动物的话，可以致电有关部门为其寻求帮助|动物识别|普通|
@@ -45,6 +46,13 @@
 - 场景三：
 小A在路上遇到了一只从来没有见过的野生动物，而且看起来是误闯到了人类生活的区域，扔下不管可能会有危险，但是它不确定是不是真的珍惜的野生动物是否需要特殊处理，于是小A打开了APP，拍下该动物的照片并上传识别，发现是是一只“朱鹮”，于是致电给中国野生动物保护协会来拯救这只朱鹮。
 
+
+
+## 产品规划
+
+### 产品架构图
+
+!(我是铲屎官_产品架构图)[C:\Users\大软爸爸\Desktop\API_期末\我是铲屎官_功能架构图.png]
 ### API的运用
 - 百度API：类似图片搜索
 接口描述：  
@@ -53,59 +61,40 @@
 https://aip.baidubce.com/rest/2.0/realtime_search/same_hq/add?access_token=24.f9ba9c5241b67688bb4adbed8bc91dec.2592000.1485570332.282335-8574074  
 
 请求方法：POST  
-- 建立图片库
+建立图片库：  
 
 ```
-
-
 from aip import AipImageSearch
-
 """ 你的 APPID AK SK """
 APP_ID = '你的id'
 API_KEY = 'API key'
 SECRET_KEY = 'secret key'
-
 client = AipImageSearch(APP_ID, API_KEY, SECRET_KEY)
 """ 读取图片 """
 def get_file_content(filePath):
     with open(filePath, 'rb') as fp:
         return fp.read()
 url = "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1576664027723&di=6b8ba1ebac07f21bf9532a42082b829f&imgtype=0&src=http%3A%2F%2Fgss0.baidu.com%2F94o3dSag_xI4khGko9WTAnF6hhy%2Fzhidao%2Fpic%2Fitem%2F279759ee3d6d55fb62af20ec6f224f4a21a4dd8b.jpg"
-
-""" 调用相似图片搜索—入库, 图片参数为远程url图片 """
 client.similarAddUrl(url);
-
 """ 如果有可选参数 """
 options = {}
 options["brief"] = "{\"name\":\"猫藓\", \"id\":\"666\"}"
 options["tags"] = "1"
-
 """ 带参数调用相似图片搜索—入库, 图片参数为远程url图片 """
 client.similarAddUrl(url, options)
-
 ```
-
-- 搜索照片
+搜索照片：  
 ```
-""" 读取图片 """
 def get_file_content(filePath):
     with open(filePath, 'rb') as fp:
         return fp.read()
 url = "https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=2295067928,2583641020&fm=26&gp=0.jpg"
-
-""" 调用相似图片搜索—检索, 图片参数为远程url图片 """
 client.similarSearchUrl(url);
-
-""" 如果有可选参数 """
 options = {}
 options["tags"] = "100,11"
-
-
-""" 带参数调用相似图片搜索—检索, 图片参数为远程url图片 """
 client.similarSearchUrl(url, options)
 ```
-
-- 结果
+结果：  
 ```
 {'has_more': False,
  'log_id': 9124903545715924818,
@@ -115,15 +104,56 @@ client.similarSearchUrl(url, options)
    'cont_sign': '1570273859,4007812260'}]}
 ```
 
+- 百度API：动物识别
+接口描述：输入一张动物照片，输出动物识别结果  
+接口地址：http://https//ai.baidu.com/ai-doc/IMAGERECOGNITION/Zk3bcxdfr  
+请求方法：POST
 
+输入代码：  
+```
+def get_file_content(filePath):
+    with open(filePath, 'rb') as fp:
+        return fp.read()
+image = get_file_content('朱鹮.jpg')
+client.animalDetect(image);
+options = {}
+options["top_num"] = 3
+options["baike_num"] = 5
+client.animalDetect(image, options)
+```
+输出：  
+```
+{
+	"log_id": "3739980897571176466",
+	"result": [
+		{
+			"score": "0.971646",
+			"name": "朱鹮"
+		},
+		{
+			"score": "0.0217333",
+			"name": "秦岭四宝"
+		},
+		{
+			"score": "0.00249143",
+			"name": "朱鹭"
+		},
+		{
+			"score": "0.00036921",
+			"name": "美洲白鹮"
+		},
+		{
+			"score": "0.000339712",
+			"name": "白鹮"
+		},
+		{
+			"score": "0.000238314",
+			"name": "琵鹭"
+		}
+	]
+}
+```
 
-
-
-### 用户需求
-- 需求一：在社交圈找到宠物生病时及时处理的正确方法
-- 需求二：通过宠物社交圈找回宠物
-
-## 产品规划
 
 ### 
 
