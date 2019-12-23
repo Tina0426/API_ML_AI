@@ -57,6 +57,24 @@
 ![我是铲屎官_功能架构图](https://github.com/Tina0426/API_ML_AI/blob/master/image/%E6%88%91%E6%98%AF%E9%93%B2%E5%B1%8E%E5%AE%98_%E5%8A%9F%E8%83%BD%E6%9E%B6%E6%9E%84%E5%9B%BE.png)
 
 
+## 产品原型
+- 查找病历
+![点击查找病历](https://raw.githubusercontent.com/Tina0426/API_ML_AI/master/image/%E7%82%B9%E5%87%BB%E5%AF%BB%E6%89%BE%E7%97%85%E5%8E%86.jpg)
+
+- 编辑病历内容
+![编辑病历的内容以及上传图片](https://github.com/Tina0426/API_ML_AI/blob/master/image/%E7%BC%96%E8%BE%91%E7%97%85%E5%8E%86%E5%86%85%E5%AE%B9.jpg)
+
+- 通过识别找出相似的图片并且返回相应的病历
+![找到病历](https://github.com/Tina0426/API_ML_AI/blob/master/image/%E6%89%BE%E5%88%B0%E7%97%85%E5%8E%86.jpg)
+
+- 编辑、分享病历
+![编辑内容、分享病历](https://github.com/Tina0426/API_ML_AI/blob/master/image/%E5%88%86%E4%BA%AB%E7%97%85%E5%8E%86.jpg)
+
+- 使用找走失动物的功能
+![通过图像识别找到相似的动物](https://github.com/Tina0426/API_ML_AI/blob/master/image/%E6%89%BE%E5%8A%A8%E7%89%A9.png)
+
+
+
 ### API的运用
 - 百度API：类似图片搜索
 接口描述：  
@@ -176,6 +194,7 @@ client.animalDetect(image, options)
 - 从目前的宠物APP市场上看，这种查找宠物病历、寻找宠物的社交性APP比较少，而且现在中国越来越多的人选择饲养宠物，有一定的市场需求量。
 - 该产品能够帮助饲养新手找到比价合适的饲养宠物的经验，此外还能够帮助宠物走失的主任找到他们的宠物
 - 动物识别功能能够帮助人们认识在偶然间发现的珍稀动物，如果这种珍稀动物在被发现时刚好处于危险的状态中，我们能够联系有关的部门来帮助它们。
+
 
 
 
