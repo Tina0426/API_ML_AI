@@ -58,21 +58,45 @@
 
 
 ## 产品原型
-- 查找病历
+- 查找病历  
+  
 ![点击查找病历](https://raw.githubusercontent.com/Tina0426/API_ML_AI/master/image/%E7%82%B9%E5%87%BB%E5%AF%BB%E6%89%BE%E7%97%85%E5%8E%86.jpg)
 
-- 编辑病历内容
+- 编辑病历内容  
+  
 ![编辑病历的内容以及上传图片](https://github.com/Tina0426/API_ML_AI/blob/master/image/%E7%BC%96%E8%BE%91%E7%97%85%E5%8E%86%E5%86%85%E5%AE%B9.jpg)
 
-- 通过识别找出相似的图片并且返回相应的病历
+- 通过识别找出相似的图片并且返回相应的病历  
+  
 ![找到病历](https://github.com/Tina0426/API_ML_AI/blob/master/image/%E6%89%BE%E5%88%B0%E7%97%85%E5%8E%86.jpg)
 
-- 编辑、分享病历
+- 编辑、分享病历  
+  
 ![编辑内容、分享病历](https://github.com/Tina0426/API_ML_AI/blob/master/image/%E5%88%86%E4%BA%AB%E7%97%85%E5%8E%86.jpg)
 
-- 使用找走失动物的功能
-![通过图像识别找到相似的动物](https://github.com/Tina0426/API_ML_AI/blob/master/image/%E6%89%BE%E5%8A%A8%E7%89%A9.png)
+- 使用找走失动物的功能  
+  
+![找宠物功能](https://github.com/Tina0426/API_ML_AI/blob/master/image/%E6%89%BE%E5%AE%A0%E7%89%A9.jpg)
 
+- 编辑自己宠物走失的信息、身上的特征  
+  
+![通过图片返回相似的宠物图片](https://github.com/Tina0426/API_ML_AI/blob/master/image/%E9%80%9A%E8%BF%87%E5%8C%B9%E9%85%8D%E6%89%BE%E5%88%B0%E5%AE%A0%E7%89%A9.jpg)
+
+- 发现走失的宠物  
+  
+  ![发现别人的宠物走失时](https://github.com/Tina0426/API_ML_AI/blob/master/image/%E5%8F%91%E7%8E%B0%E5%88%AB%E4%BA%BA%E7%9A%84%E5%AE%A0%E7%89%A9.jpg)
+  
+- 将走失的动物照片上传至图库
+![上传走失的动物照片](https://github.com/Tina0426/API_ML_AI/blob/master/image/%E4%B8%8A%E4%BC%A0%E5%88%AB%E4%BA%BA%E5%AE%A0%E7%89%A9%E8%B5%B0%E5%A4%B1%E7%9A%84%E7%85%A7%E7%89%87.jpg)
+
+- 识别珍稀动物
+
+![上传珍稀动物的照片](https://github.com/Tina0426/API_ML_AI/blob/master/image/%E5%8F%91%E7%8E%B0%E5%8A%A8%E7%89%A9.jpg)
+
+- 识别成功返回相关信息  
+  
+![识别动物成功](https://github.com/Tina0426/API_ML_AI/blob/master/image/%E5%AF%BB%E6%89%BE%E5%8A%A8%E7%89%A9%E6%88%90%E5%8A%9F.jpg)  
+  
 
 
 ### API的运用
@@ -188,6 +212,8 @@ client.animalDetect(image, options)
 - 从图库的容量上，百度图库的容量比阿里云的图库容量大，阿里云的图库容量只能到达10万，百度图库容量可达1000万。
 - 从请求参数上，百度的请求参数更多，能够对图片进行标签分类，而阿里的请求参数相对较少，能够选择的空间较少，难以对图库里面的图片进行分类处理。
 - 百度的动物识别能够与百度百科连接使用而阿里只能在返回动物的名称。
+![百度可请求的参数更加多样化](https://github.com/Tina0426/API_ML_AI/blob/master/image/%E7%99%BE%E5%BA%A6AI%E5%8F%AF%E8%AF%B7%E6%B1%82%E5%8F%82%E6%95%B0.jpg)  
+![阿里可请求参数比较少](https://github.com/Tina0426/API_ML_AI/blob/master/image/%E9%98%BF%E9%87%8C%E4%BA%91%E5%8F%AF%E8%AF%B7%E6%B1%82%E5%8F%82%E6%95%B0.jpg)  
 
 
 ### 产品可行性
@@ -195,6 +221,9 @@ client.animalDetect(image, options)
 - 该产品能够帮助饲养新手找到比价合适的饲养宠物的经验，此外还能够帮助宠物走失的主任找到他们的宠物
 - 动物识别功能能够帮助人们认识在偶然间发现的珍稀动物，如果这种珍稀动物在被发现时刚好处于危险的状态中，我们能够联系有关的部门来帮助它们。
 
+
+## 结果预期
+该APP是一个社交型的APP，图库的来源取决于用户是否上传了足够多的图片与经验，如果没有用户上传的相似图片，在前期的API调用上失败率非常高，通常的情况下就是找不到相似的宠物图片和宠物病症图片，在这种情况下，应该给予分享病历的用户与帮忙寻找宠物的用户相应的奖励。增大我们的图库里的图库量。
 
 
 
