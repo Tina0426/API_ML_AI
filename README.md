@@ -46,6 +46,13 @@
 - 场景三：
 小A在路上遇到了一只从来没有见过的野生动物，而且看起来是误闯到了人类生活的区域，扔下不管可能会有危险，但是它不确定是不是真的珍惜的野生动物是否需要特殊处理，于是小A打开了APP，拍下该动物的照片并上传识别，发现是是一只“朱鹮”，于是致电给中国野生动物保护协会来拯救这只朱鹮。
 
+### 人工智能概率性与用户痛点
+- 百度API：相似图片搜索：
+1. 可自建图库支持亿级图片量上传入库，实现实时检索，单图毫秒级响应。
+2. 基于数千万级的训练数据、数万个语义类别进行模型训练及图库积累，使用精准的算法迭代模型不断提高准备度。
+
+   综上可知，用户在社交群中上传越多的照片，图库的量就最大，能够检索出的结果就越多，找到符合用户需求照片（病症）的概率就越大。而且能够实现实时检索，单图能够做到毫秒级响应，能够快速为用户匹配到相似的宠物病症。此外，大量的的语义类别能够帮助用户更加精确地找到有效的病症。同样的，足够大的图库量，能够提升主人找回宠物的可能性。 
+
 
 
 ## 产品规划
@@ -60,41 +67,43 @@
 ## 产品原型
 - 查找病历  
   
-![点击查找病历](https://raw.githubusercontent.com/Tina0426/API_ML_AI/master/image/%E7%82%B9%E5%87%BB%E5%AF%BB%E6%89%BE%E7%97%85%E5%8E%86.jpg)
-
+![点击查找病历](https://raw.githubusercontent.com/Tina0426/API_ML_AI/master/image/%E7%82%B9%E5%87%BB%E5%AF%BB%E6%89%BE%E7%97%85%E5%8E%86.jpg)  
+  
 - 编辑病历内容  
   
-![编辑病历的内容以及上传图片](https://github.com/Tina0426/API_ML_AI/blob/master/image/%E7%BC%96%E8%BE%91%E7%97%85%E5%8E%86%E5%86%85%E5%AE%B9.jpg)
+![编辑病历的内容以及上传图片](https://github.com/Tina0426/API_ML_AI/blob/master/image/%E7%BC%96%E8%BE%91%E7%97%85%E5%8E%86%E5%86%85%E5%AE%B9.jpg)  
 
 - 通过识别找出相似的图片并且返回相应的病历  
   
-![找到病历](https://github.com/Tina0426/API_ML_AI/blob/master/image/%E6%89%BE%E5%88%B0%E7%97%85%E5%8E%86.jpg)
-
+![找到病历](https://github.com/Tina0426/API_ML_AI/blob/master/image/%E6%89%BE%E5%88%B0%E7%97%85%E5%8E%86.jpg)  
+  
 - 编辑、分享病历  
   
-![编辑内容、分享病历](https://github.com/Tina0426/API_ML_AI/blob/master/image/%E5%88%86%E4%BA%AB%E7%97%85%E5%8E%86.jpg)
-
+![编辑内容、分享病历](https://github.com/Tina0426/API_ML_AI/blob/master/image/%E5%88%86%E4%BA%AB%E7%97%85%E5%8E%86.jpg)  
+  
 - 使用找走失动物的功能  
   
-![找宠物功能](https://github.com/Tina0426/API_ML_AI/blob/master/image/%E6%89%BE%E5%AE%A0%E7%89%A9.jpg)
-
+![找宠物功能](https://github.com/Tina0426/API_ML_AI/blob/master/image/%E6%89%BE%E5%AE%A0%E7%89%A9.jpg)  
+  
 - 编辑自己宠物走失的信息、身上的特征  
   
-![通过图片返回相似的宠物图片](https://github.com/Tina0426/API_ML_AI/blob/master/image/%E9%80%9A%E8%BF%87%E5%8C%B9%E9%85%8D%E6%89%BE%E5%88%B0%E5%AE%A0%E7%89%A9.jpg)
+![通过图片返回相似的宠物图片](https://github.com/Tina0426/API_ML_AI/blob/master/image/%E9%80%9A%E8%BF%87%E5%8C%B9%E9%85%8D%E6%89%BE%E5%88%B0%E5%AE%A0%E7%89%A9.jpg)  
+
 
 - 发现走失的宠物  
   
-  ![发现别人的宠物走失时](https://github.com/Tina0426/API_ML_AI/blob/master/image/%E5%8F%91%E7%8E%B0%E5%88%AB%E4%BA%BA%E7%9A%84%E5%AE%A0%E7%89%A9.jpg)
+  ![发现别人的宠物走失时](https://github.com/Tina0426/API_ML_AI/blob/master/image/%E5%8F%91%E7%8E%B0%E5%88%AB%E4%BA%BA%E7%9A%84%E5%AE%A0%E7%89%A9.jpg)  
+  
   
 - 将走失的动物照片上传至图库
-![上传走失的动物照片](https://github.com/Tina0426/API_ML_AI/blob/master/image/%E4%B8%8A%E4%BC%A0%E5%88%AB%E4%BA%BA%E5%AE%A0%E7%89%A9%E8%B5%B0%E5%A4%B1%E7%9A%84%E7%85%A7%E7%89%87.jpg)
-
-- 识别珍稀动物
-
-![上传珍稀动物的照片](https://github.com/Tina0426/API_ML_AI/blob/master/image/%E5%8F%91%E7%8E%B0%E5%8A%A8%E7%89%A9.jpg)
-
-- 识别成功返回相关信息  
+![上传走失的动物照片](https://github.com/Tina0426/API_ML_AI/blob/master/image/%E4%B8%8A%E4%BC%A0%E5%88%AB%E4%BA%BA%E5%AE%A0%E7%89%A9%E8%B5%B0%E5%A4%B1%E7%9A%84%E7%85%A7%E7%89%87.jpg)  
   
+- 识别珍稀动物  
+
+![上传珍稀动物的照片](https://github.com/Tina0426/API_ML_AI/blob/master/image/%E5%8F%91%E7%8E%B0%E5%8A%A8%E7%89%A9.jpg)  
+  
+- 识别成功返回相关信息    
+    
 ![识别动物成功](https://github.com/Tina0426/API_ML_AI/blob/master/image/%E5%AF%BB%E6%89%BE%E5%8A%A8%E7%89%A9%E6%88%90%E5%8A%9F.jpg)  
   
 
@@ -201,12 +210,7 @@ client.animalDetect(image, options)
 ```
 
 
-### 人工智能概率性与用户痛点
-- 百度API：相似图片搜索：
-1. 可自建图库支持亿级图片量上传入库，实现实时检索，单图毫秒级响应。
-2. 基于数千万级的训练数据、数万个语义类别进行模型训练及图库积累，使用精准的算法迭代模型不断提高准备度。
-
-   综上可知，用户在社交群中上传越多的照片，图库的量就最大，能够检索出的结果就越多，找到符合用户需求照片（病症）的概率就越大。而且能够实现实时检索，单图能够做到毫秒级响应，能够快速为用户匹配到相似的宠物病症。此外，大量的的语义类别能够帮助用户更加精确地找到有效的病症。同样的，足够大的图库量，能够提升主人找回宠物的可能性。  
+ 
 
 ### 百度与阿里之间 相似照片的搜索 比较
 - 从图库的容量上，百度图库的容量比阿里云的图库容量大，阿里云的图库容量只能到达10万，百度图库容量可达1000万。
@@ -214,6 +218,20 @@ client.animalDetect(image, options)
 - 百度的动物识别能够与百度百科连接使用而阿里只能在返回动物的名称。
 ![百度可请求的参数更加多样化](https://github.com/Tina0426/API_ML_AI/blob/master/image/%E7%99%BE%E5%BA%A6AI%E5%8F%AF%E8%AF%B7%E6%B1%82%E5%8F%82%E6%95%B0.jpg)  
 ![阿里可请求参数比较少](https://github.com/Tina0426/API_ML_AI/blob/master/image/%E9%98%BF%E9%87%8C%E4%BA%91%E5%8F%AF%E8%AF%B7%E6%B1%82%E5%8F%82%E6%95%B0.jpg)  
+
+### API使用限制
+#### 相似图片搜索API定价
+- 图库定价  
+![百度图库定价](https://github.com/Tina0426/API_ML_AI/blob/master/image/%E7%99%BE%E5%BA%A6%E5%9B%BE%E5%BA%93%E5%AE%9A%E4%BB%B7.jpg)  
+
+- 调用量定价  
+![https://github.com/Tina0426/API_ML_AI/blob/master/image/%E7%99%BE%E5%BA%A6%E8%B0%83%E7%94%A8%E9%87%8F%E5%AE%9A%E4%BB%B7.jpg]()  
+  
+  
+#### 输入限制
+该接口实现单张图片入库，入库时需要同步提交图片及可关联至本地图库的摘要信息（具体变量为brief，具体可传入图片在本地标记id、图片url、图片名称等）；同时可提交分类维度信息（具体变量为tags，最多可传入2个tag），方便对图库中的图片进行管理、分类检索。
+请求图片需经过base64编码：图片的base64编码指将一副图片数据编码成一串字符串，使用该字符串代替图像地址。您可以首先得到图片的二进制，然后用Base64格式编码即可。
+注意：图片的base64编码是不包含图片头的，如（data:image/jpg;base64,）
 
 
 ### 产品可行性
