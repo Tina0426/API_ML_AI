@@ -67,7 +67,7 @@
 ## 产品原型
 - 查找病历  
   
-![点击查找病历](https://raw.githubusercontent.com/Tina0426/API_ML_AI/master/image/%E7%82%B9%E5%87%BB%E5%AF%BB%E6%89%BE%E7%97%85%E5%8E%86.jpg)  
+![点击查找病历](https://github.com/Tina0426/API_ML_AI/blob/master/image/%E5%AF%BB%E6%89%BE%E7%97%85%E5%8E%86.jpg)  
   
 - 编辑病历内容  
   
