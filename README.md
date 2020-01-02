@@ -2,7 +2,7 @@
 |发布日期|2019-12-8|
 |:---|:---:|
 |项目名称|我是铲屎官|
-|项目现状|进行中|
+|项目现状|已完成|
 |项目主人|郭沅宜|
 |项目设计师|郭沅宜|
 |项目开发者|郭沅宜|
@@ -225,7 +225,7 @@ client.animalDetect(image, options)
 ![百度图库定价](https://github.com/Tina0426/API_ML_AI/blob/master/image/%E7%99%BE%E5%BA%A6%E5%9B%BE%E5%BA%93%E5%AE%9A%E4%BB%B7.jpg)  
 
 - 调用量定价  
-![https://github.com/Tina0426/API_ML_AI/blob/master/image/%E7%99%BE%E5%BA%A6%E8%B0%83%E7%94%A8%E9%87%8F%E5%AE%9A%E4%BB%B7.jpg]()  
+![调用量定价](https://github.com/Tina0426/API_ML_AI/blob/master/image/%E7%99%BE%E5%BA%A6%E8%B0%83%E7%94%A8%E9%87%8F%E5%AE%9A%E4%BB%B7.jpg)  
   
   
 #### 输入限制
